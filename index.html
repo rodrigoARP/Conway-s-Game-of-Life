@@ -2,15 +2,24 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego de la Vida de Conway</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <h1 class="title">Game of Life</h1>
+
     <canvas id="canvas"></canvas>
+
     <div class="controls">
-        <button id="startBtn">Iniciar</button>
-        <button id="pauseBtn">Pausar</button>
-        <button id="clearBtn">Limpiar</button> <!-- Nuevo botón de limpiar -->
+        <button id="startPauseBtn">Iniciar</button>
+        <button id="clearBtn">Limpiar</button>
+        <button id="moveLeft"><i class="fas fa-arrow-left"></i></button>
+        <button id="moveRight"><i class="fas fa-arrow-right"></i></button>
+        <button id="moveUp"><i class="fas fa-arrow-up"></i></button>
+        <button id="moveDown"><i class="fas fa-arrow-down"></i></button>
     </div>
     <script src="script.js"></script>
 </body>

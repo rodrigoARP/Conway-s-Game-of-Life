@@ -1,17 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    padding: 0;
+    background-color: #0D0628;
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
 }
 
 canvas {
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     display: block;
-    margin: 20px auto;
     cursor: pointer;
-    background-color: #808080;  /* Fondo gris */
+}
+
+.title {
+    font-size: 2.0rem; /* Aumenté de 2rem a 2.5rem */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f6f6f6;
+    text-align: center;
 }
 
 .controls {
@@ -20,21 +29,18 @@ canvas {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 15px 25px; /* Incrementé los valores para mayor comodidad */
     margin: 5px;
-    font-size: 16px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #2c8c99;
+    color: rgb(255, 255, 255);
+    font-family: "Pixelify Sans", serif;
+    font-size: 1.0rem; /* Añadí esta propiedad para aumentar el tamaño del texto */
+    font-optical-sizing: auto;
 }
 
 button:hover {
-    background-color: #45a049;
-}
-
-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
+    background-color: #133439;
 }
